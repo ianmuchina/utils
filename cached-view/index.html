@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get content from google's cache" />
+    <title>Cached view</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Cached View</h1>
+
+      <form
+        target="_blank"
+        rel="noopener noreferrer"
+        action="https://webcache.googleusercontent.com/search"
+        method="get"
+      >
+        <input type="hidden" name="q" id="query" />
+        <input type="hidden" name="strip" value="1" />
+        <input type="hidden" name="vwsrc" value="0" />
+
+        <div class="input">
+          <input
+            type="url"
+            name=""
+            placeholder="https://example.com"
+            id="url"
+          />
+          <button type="submit">Go</button>
+        </div>
+      </form>
+
+      <div class="links">
+        <a id="googleCache" target="_blank" rel="noopener noreferrer" href="#">
+          Google Web Cache
+        </a>
+
+        <a
+          id="archiveDotOrg"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="#"
+        >
+          <span> Archive.org </span>
+        </a>
+
+        <a id="live" target="_blank" rel="noopener noreferrer" href="#">
+          Live Version
+        </a>
+      </div>
+    </main>
+  </body>
+  <script src="./dist/index.js"></script>
+</html>
